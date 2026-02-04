@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Monitoring Dashboard</title>
 </head>
 <body>
-    
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <button class="active" onclick="showSection('monitoring')">Monitoring</button>
+        <button onclick="showSection('datalogs')">Data Logs</button>
+        <button onclick="showSection('transport')">Transport Logs</button>
+        
+        <div class="user-info">
+            <button onclick="logout()" style="margin-top: 10px; width: 100%;">Logout</button>
+        </div>
+    </div>
 </body>
 </html>
