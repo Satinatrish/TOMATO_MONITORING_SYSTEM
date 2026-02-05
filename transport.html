@@ -16,15 +16,81 @@
     <div class="user-info">
         <button onclick="logout()">Logout</button>
     </div>
-    
+
 </div>
 
 <div class="main">
     <h2>Transport Logs</h2>
-    <div class="section">
-        <p>Completed and ongoing transport history.</p>
-    </div>
+
+        <div class="filter-section">
+            <label for="timeFilter">Show:</label>
+            <select id="timeFilter" class="filter-select" onchange="filterTransport()">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+        </div>
+
+        <div class="logs-container">
+            <table class="logs-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Transport ID</th>
+                        <th>Plant Name</th>
+                        <th>Origin</th>
+                        <th>Destination</th>
+                        <th>Temperature</th>
+                        <th>Humidity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="transportBody">
+                    <tr>
+                        <td>2026-02-05</td>
+                        <td>1</td>
+                        <td>Tomato</td>
+                        <td>Manolo Farm</td>
+                        <td>CDO Market</td>
+                        <td>26°C</td>
+                        <td>52%</td>
+                        <td class="status-active">Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>2026-02-05</td>
+                        <td>2</td>
+                        <td>Tomato</td>
+                        <td>Manolo Farm</td>
+                        <td>Davao Market</td>
+                        <td>30°C</td>
+                        <td>60%</td>
+                        <td class="status-pending">In Transit</td>
+                    </tr>
+                    <tr>
+                        <td>2026-02-04</td>
+                        <td>3</td>
+                        <td>Tomato</td>
+                        <td>Manolo Farm</td>
+                        <td>Gensan Market</td>
+                        <td>22°C</td>
+                        <td>48%</td>
+                        <td class="status-active">Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 </div>
 
 </body>
+ <script>
+        function logout() {
+            if (confirm('Are you sure you want to logout?')) {
+                window.location.href = "index.html";
+            }
+        }
+        function filterTransport() {
+            const filter = document.getElementById("timeFilter").value;
+            alert("Filter set to: " + filter);
+        }
+    </script>
 </html>
