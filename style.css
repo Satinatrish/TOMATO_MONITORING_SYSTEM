@@ -12,10 +12,10 @@ body {
 }
 
 .sidebar {
-    width: 200px;
+    width: 160px;
     background: #1b9225;
     color: white;
-    padding: 20px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -27,18 +27,18 @@ body {
 }
 
 .sidebar h2 {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 12px;
+    font-size: 1rem;
 }
 
 .sidebar .nav-btn {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 12px 16px;
+    padding: 8px 10px;
     border-radius: 8px;
-    margin-bottom: 8px;
-    font-size: 13px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
     transition: background 0.3s;
 }
 
@@ -47,15 +47,15 @@ body {
 }
 
 .main {
-    margin-left: 220px; 
+    margin-left: 170px; 
     flex: 1;
-    padding: 30px;
+    padding: 15px;
     overflow-y: auto;
 }
 
 .user-info button {
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     border-radius: 8px;
     border: none;
     background: transparent;
@@ -63,6 +63,7 @@ body {
     cursor: pointer;
     transition: background 0.3s;
     text-align: left;
+    font-size: 0.8rem;
 }
 
 .user-info button:hover {
@@ -71,34 +72,29 @@ body {
 
 .user-info {
     margin-top: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 1.2rem;
     text-align: left;
-}
-
-.main {
-    flex: 1;
-    padding: 30px;
-    overflow-y: auto;
 }
 
 .section {
     background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
     border: 1px solid #e6e6e6;
 }
 
 .section h3 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #333;
+    font-size: 0.95rem;
 }
 
 .info-row {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    font-size: 14px;
+    padding: 6px 0;
+    font-size: 0.8rem;
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -109,57 +105,57 @@ body {
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .column {
     background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 12px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+    gap: 10px;
+    margin-bottom: 12px;
 }
 
 .card {
     background: #1b9225;
     color: white;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
 }
 
 .card .icon {
-    font-size: 24px;
-    margin-bottom: 2px;
+    font-size: 1.6rem;
+    margin-bottom: 4px;
 }
 
 .card p{
-    font-size: 16px;
+    font-size: 0.8rem;
     font-family: inherit;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     font-weight: bold;
 }
 
 .card span{
-    font-size: 18px;
+    font-size: 1rem;
     font-family: inherit;
     text-align: center;
 }
 
 .transpo {
-    width: 9rem;
-    padding: 8px;
-    margin-bottom: 1rem;
+    width: 8rem;
+    padding: 7px;
+    margin-bottom: 0.8rem;
     border-radius: 6px;
     border: 1px solid #dddddd;
-    font-size: 14px;
+    font-size: 0.85rem;
     cursor: pointer;
 }
 
@@ -179,23 +175,23 @@ body {
 .status-active {
     background: #4caf50;
     color: white;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 0.65rem;
 }
 
 .status-pending {
     background: #ff9800;
     color: white;
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 0.65rem;
 }
 
 .switch {
     position: relative;
-    width: 50px;
-    height: 24px;
+    width: 40px;
+    height: 20px;
     display: inline-block;
 }
 
@@ -209,7 +205,7 @@ body {
     position: absolute;
     inset: 0;
     background-color: #ccc;
-    border-radius: 24px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -217,8 +213,8 @@ body {
 .slider:before {
     content: "";
     position: absolute;
-    height: 18px;
-    width: 18px;
+    height: 14px;
+    width: 14px;
     left: 3px;
     bottom: 3px;
     background: white;
@@ -231,7 +227,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-    transform: translateX(26px);
+    transform: translateX(20px);
 }
 
 .hidden {
@@ -244,7 +240,73 @@ input:checked + .slider:before {
     }
 
     .sidebar {
-        width: 180px;
+        width: 140px;
+        padding: 10px;
+    }
+    
+    .sidebar h2 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .sidebar .nav-btn {
+        padding: 7px 8px;
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+    }
+    
+    .user-info button {
+        padding: 7px;
+        font-size: 0.75rem;
+    }
+    
+    .main {
+        margin-left: 150px;
+        padding: 12px;
+    }
+    
+    .section {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .section h3 {
+        font-size: 0.9rem;
+    }
+    
+    .info-row {
+        font-size: 0.75rem;
+        padding: 5px 0;
+    }
+    
+    .column {
+        padding: 10px;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+        gap: 8px;
+    }
+    
+    .card {
+        padding: 8px;
+    }
+    
+    .card .icon {
+        font-size: 1.4rem;
+    }
+    
+    .card p {
+        font-size: 0.75rem;
+    }
+    
+    .card span {
+        font-size: 0.9rem;
+    }
+    
+    .transpo {
+        width: 7rem;
+        font-size: 0.8rem;
+        padding: 6px;
     }
 }
-

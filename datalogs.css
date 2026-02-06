@@ -1,16 +1,16 @@
 .filter-section {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    gap: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .filter-select {
-    padding: 6px 10px;
+    padding: 8px;
     border-radius: 6px;
     border: 1px solid #ddd;
-    font-size: 14px;
+    font-size: 0.85rem;
     cursor: pointer;
     background: white;
     transition: border-color 0.3s;
@@ -19,8 +19,8 @@
 .logs-container {
     overflow-x: auto;
     background: white;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     border: 1px solid #e6e6e6;
 }
@@ -28,11 +28,11 @@
 .logs-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 0.75rem;
 }
 
 .logs-table th, .logs-table td {
-    padding: 12px 15px;
+    padding: 6px 4px;
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -41,6 +41,7 @@
     background: #138b1d;
     color: white;
     font-weight: 500;
+    font-size: 0.7rem;
 }
 
 .logs-table tr:hover {
@@ -49,22 +50,41 @@
 
 .status-safe {
     color: rgb(39, 156, 3);
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 0.65rem;
 }
 
 .status-warning {
     color: rgb(201, 137, 0);
-    padding: 4px 10px;
-    border-radius: 12px;
-    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 0.65rem;
 }
 
 
 @media (max-width: 768px) {
+    .filter-section {
+        gap: 5px;
+    }
+    
     .logs-table th, .logs-table td {
-        font-size: 12px;
+        font-size: 0.65rem;
+        padding: 5px 3px;
+    }
+    
+    .filter-select {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+    
+    .logs-container {
         padding: 8px;
+    }
+    
+    .status-safe,
+    .status-warning {
+        font-size: 0.6rem;
+        padding: 2px 5px;
     }
 }

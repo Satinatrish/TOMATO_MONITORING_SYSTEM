@@ -9,34 +9,34 @@
 <body>
 
 <div class="sidebar">
-    <h2 style="color:#fffaee">🌿GreenGrow</h2>
-    <a href="dashboard.html" class="nav-btn active">Monitoring</a>
-    <a href="datalogs.html" class="nav-btn">Data Logs</a>
-    <a href="transport.html" class="nav-btn">Transport Logs</a>
+    <h2 style="color:#fffaee; font-size: 1rem;">🌿GreenGrow</h2>
+    <a href="dashboard.html" class="nav-btn active" style="font-size: 0.8rem; padding: 8px 10px;">Monitoring</a>
+    <a href="datalogs.html" class="nav-btn" style="font-size: 0.8rem; padding: 8px 10px;">Data Logs</a>
+    <a href="transport.html" class="nav-btn" style="font-size: 0.8rem; padding: 8px 10px;">Transport Logs</a>
 
     <div class="user-info">
-        <button onclick="logout()">Logout</button>
+        <button onclick="logout()" style="font-size: 0.8rem; padding: 8px;">Logout</button>
     </div>
 </div>
 
 <div class="main">
-    <h2>Monitoring Dashboard</h2>
+    <h2 style="font-size: 1.2rem; margin-bottom: 12px;">Monitoring Dashboard</h2>
 
 
     <div class="section">
         <div class="two-column">
             <div class="column">
-                <h3 style="color: #00ad0e;">Plant Details</h3>
-                <div class="info-row"><span>Plant:</span><b>Tomato</b></div>
-                <div class="info-row"><span>Temp:</span><b>15–30 °C</b></div>
-                <div class="info-row"><span>Humidity:</span><b>50–60%</b></div>
+                <h3 style="color: #00ad0e; font-size: 0.95rem; margin-bottom: 10px;">Plant Details</h3>
+                <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Plant:</span><b>Tomato</b></div>
+                <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Temp:</span><b>15–30 °C</b></div>
+                <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Humidity:</span><b>50–60%</b></div>
             </div>
 
             <div class="column">
-                <h3 style="color: #00ad0e;">Automation</h3>
-                <div class="info-row"><span>Humidity Threshold:</span><b>53%</b></div>
-                <div class="info-row"><span>Temp Limit:</span><b>16 °C</b></div>
-                <div class="info-row">
+                <h3 style="color: #00ad0e; font-size: 0.95rem; margin-bottom: 10px;">Automation</h3>
+                <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Humidity Threshold:</span><b>53%</b></div>
+                <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Temp Limit:</span><b>16 °C</b></div>
+                <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;">
                     <span>Auto Ventilation:</span>
                     <label class="switch">
                         <input type="checkbox" checked>
@@ -48,26 +48,38 @@
     </div>
 
     <div class="section">
-        <h3>Monitoring Transport</h3>
+        <h3 style="font-size: 0.95rem; margin-bottom: 10px;">Monitoring Transport</h3>
 
-        <select id="transpo" class="transpo" onchange="updateTransport()">
+        <select id="transpo" class="transpo" onchange="updateTransport()" style="font-size: 0.85rem; padding: 7px; width: 8rem;">
             <option value="">Select Transport</option>
             <option value="1">Transport 1</option>
             <option value="2">Transport 2</option>
         </select>
 
         <div class="card-grid" id="monitorContainer">
-            <div class="card"><div class="icon">💧</div><p>Humidity</p><span id="humidity">--%</span></div>
-            <div class="card"><div class="icon">🌡️</div><p>Temperature</p><span id="temperature">--°C</span></div>
-            <div class="card"><div class="icon">💨</div><p>Ventilation</p><span id="ventilation">--</span></div>
+            <div class="card" style="padding: 10px;">
+                <div class="icon" style="font-size: 1.6rem; margin-bottom: 4px;">💧</div>
+                <p style="font-size: 0.8rem; margin-bottom: 4px;">Humidity</p>
+                <span id="humidity" style="font-size: 1rem;">--%</span>
+            </div>
+            <div class="card" style="padding: 10px;">
+                <div class="icon" style="font-size: 1.6rem; margin-bottom: 4px;">🌡️</div>
+                <p style="font-size: 0.8rem; margin-bottom: 4px;">Temperature</p>
+                <span id="temperature" style="font-size: 1rem;">--°C</span>
+            </div>
+            <div class="card" style="padding: 10px;">
+                <div class="icon" style="font-size: 1.6rem; margin-bottom: 4px;">💨</div>
+                <p style="font-size: 0.8rem; margin-bottom: 4px;">Ventilation</p>
+                <span id="ventilation" style="font-size: 1rem;">--</span>
+            </div>
         </div>
 
         <div class="section hidden" id="details">
-            <h3>Transport Details</h3>
-            <div class="info-row"><span>ID:</span><b id="d-id"></b></div>
-            <div class="info-row"><span>Product:</span><b id="d-product"></b></div>
-            <div class="info-row"><span>Route:</span><b id="d-route"></b></div>
-            <div class="info-row"><span>Status:</span><b id="d-status"></b></div>
+            <h3 style="font-size: 0.95rem; margin-bottom: 10px;">Transport Details</h3>
+            <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>ID:</span><b id="d-id"></b></div>
+            <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Product:</span><b id="d-product"></b></div>
+            <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Route:</span><b id="d-route"></b></div>
+            <div class="info-row" style="font-size: 0.8rem; padding: 6px 0;"><span>Status:</span><b id="d-status"></b></div>
         </div>
     </div>
 </div>

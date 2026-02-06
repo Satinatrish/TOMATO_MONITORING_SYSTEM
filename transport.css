@@ -1,16 +1,16 @@
 .filter-section {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    gap: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .filter-select {
-    padding: 6px 10px;
+    padding: 8px 10px;
     border-radius: 6px;
     border: 1px solid #ddd;
-    font-size: 14px;
+    font-size: 0.9rem;
     cursor: pointer;
     background: white;
     transition: border-color 0.3s;
@@ -19,8 +19,8 @@
 .logs-container {
     overflow-x: auto;
     background: white;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     border: 1px solid #e6e6e6;
 }
@@ -28,11 +28,11 @@
 .logs-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 0.85rem;
 }
 
 .logs-table th, .logs-table td {
-    padding: 12px 15px;
+    padding: 8px 10px;
     text-align: center;
     border-bottom: 1px solid #f0f0f0;
 }
@@ -41,6 +41,7 @@
     background: #138b1d;
     color: white;
     font-weight: 500;
+    font-size: 0.8rem;
 }
 
 .logs-table tr:hover {
@@ -54,18 +55,18 @@
 .status-delivered {
     background: #4caf50;
     color: white;
-    padding: 5px 12px;
-    border-radius: 12px;
-    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
     display: inline-block;
 }
 
 .status-transit {
     background: #ff9800;
     color: white;
-    padding: 5px 12px;
-    border-radius: 12px;
-    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 0.7rem;
     display: inline-block;
 }
 
@@ -73,10 +74,10 @@
     background: #138b1d;
     color: white;
     border: none;
-    padding: 6px 16px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 0.75rem;
 }
 
 .view-btn:hover {
@@ -98,84 +99,10 @@
     background-color: white;
     margin: 10% auto;
     padding: 0;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 500px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 420px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    font-size: 14px;
+    font-size: 0.85rem;
 }
 
-.modal-content h3 {
-    background: #138b1d;
-    color: white;
-    margin: 0;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px 8px 0 0;
-}
-
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.close:hover {
-    opacity: 0.8;
-}
-
-#modalBody {
-    padding: 20px;
-}
-
-.detail-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.detail-row:last-child {
-    border-bottom: none;
-}
-
-.detail-label {
-    font-weight: 200;
-    color: #555;
-}
-
-.detail-value {
-    color: #333;
-}
-
-@media (max-width: 768px) {
-    .filter-section {
-        flex-direction: column;
-    }
-
-    .search-input,
-    .filter-select {
-        width: 100%;
-    }
-
-    .logs-table {
-        font-size: 12px;
-    }
-
-    .logs-table th,
-    .logs-table td {
-        padding: 8px;
-    }
-}
-
-.search-input{
-    width: 60%;
-    height: 2rem;
-    border-radius: 5px;
-    padding: 1rem;
-}
